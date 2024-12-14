@@ -17,6 +17,8 @@ from decouple import config
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 FRONTEND_URL = config('FRONTEND_URL')
+SECRET_KEY_FROM_ENV=config('SECRET_KEY')
+BACKEND_URL=config('BACKEND_URL')
 
  
 
@@ -24,12 +26,12 @@ FRONTEND_URL = config('FRONTEND_URL')
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-ph@th1@6v489e_#_g8(zu0gf@)j%fufm^@g%_92#o7l(gd&xf2"
+SECRET_KEY = SECRET_KEY_FROM_ENV
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [FRONTEND_URL,'https://quizer-8heo.onrender.com']
+ALLOWED_HOSTS = [FRONTEND_URL,BACKEND_URL]
 
 
 # Application definition
