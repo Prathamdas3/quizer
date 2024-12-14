@@ -29,7 +29,7 @@ SECRET_KEY = "django-insecure-ph@th1@6v489e_#_g8(zu0gf@)j%fufm^@g%_92#o7l(gd&xf2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [FRONTEND_URL]
+ALLOWED_HOSTS = [FRONTEND_URL,'https://quizer-8heo.onrender.com/']
 
 
 # Application definition
