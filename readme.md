@@ -112,7 +112,9 @@ Create a `.env` file in the root directory and add the following variables:
 
 ### **Backend (.env file)**
 ```
-FRONTEND_URL=https://quizer-eight.vercel.app
+FRONTEND_URL=http://localhost:3000
+SECRET_KEY=
+BACKEND_URL=
 ```
 
 ### **Frontend (.env file)**
